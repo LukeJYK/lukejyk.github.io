@@ -36,6 +36,8 @@ a:hover, table.table a:hover { color: var(--global-theme-color); text-decoration
 
 a:hover:after, table.table a:hover:after { width: 100%; }
 
+blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
+
 .equation { margin-bottom: 1rem; text-align: center; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
@@ -138,23 +140,19 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .distill a:hover { border-bottom-color: var(--global-theme-color); text-decoration: none; }
 
-.projects .card-item { width: auto; margin-bottom: 10px; }
+.projects a { text-decoration: none; }
 
-.projects .card-item a { text-decoration: none; }
+.projects a:hover .card-title { color: var(--global-theme-color); }
+
+.projects .card img { width: 100%; }
+
+.projects .card .card-title { color: #000000; }
+
+.projects .card-item { width: auto; margin-bottom: 10px; }
 
 .projects .card-item .row { display: flex; align-items: center; }
 
-.projects .card-item .card img { width: 100%; }
-
 .projects .grid-item { width: 250px; margin-bottom: 10px; }
-
-.projects .grid-item a { color: black; text-decoration: none; }
-
-.projects .grid-item a:hover { color: var(--global-theme-color); }
-
-.projects .grid-item .card img { width: 100%; }
-
-.projects .grid-item .card .card-title { color: #000000; }
 
 .projects h2.category { color: #e8e8e8; border-bottom: 1px solid #e8e8e8; padding-top: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: right; }
 
@@ -227,7 +225,7 @@ d-byline a:hover, d-article d-byline a:hover { color: var(--global-hover-color) 
 
 d-article { border-top-color: #e8e8e8 !important; }
 
-d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 { color: var(--global-text-color) !important; }
+d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6, d-article li, d-article table { color: var(--global-text-color) !important; }
 
 d-article a, d-article h1, d-article h2, d-article hr { border-bottom-color: #e8e8e8 !important; }
 
