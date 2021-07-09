@@ -30,6 +30,8 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 /******************************************************************************* Styles for the base elements of the theme. */
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong { color: var(--global-text-color); }
 
+article div { margin-bottom: 1rem; }
+
 a, table.table a { color: var(--global-theme-color); }
 
 a:hover, table.table a:hover { color: var(--global-theme-color); text-decoration: underline; }
