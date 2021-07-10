@@ -1,1 +1,1 @@
-Sitemap: https://lukejyk.github.io/#%20the%20base%20hostname%20&%20protocol%20for%20your%20site/https://lukejyk.github.io/sitemap.xml
+Sitemap: /sitemap.xml
