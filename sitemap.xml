@@ -1,82 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>/2015/03/16/formatting-and-links.html</loc>
-<lastmod>2015-03-16T00:40:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>/2015/05/16/images.html</loc>
-<lastmod>2015-05-16T05:01:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/assets/pdf/CV.pdf</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/2015/07/15/code.html</loc>
-<lastmod>2015-07-15T23:09:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/course/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/2015/10/20/math.html</loc>
-<lastmod>2015-10-20T23:12:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/2015/10/20/comments.html</loc>
-<lastmod>2015-10-20T23:59:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/cv/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/2018/12/22/distill.html</loc>
-<lastmod>2018-12-22T00:00:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/misc/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/2020/09/29/github-metadata.html</loc>
-<lastmod>2020-09-29T05:01:00+08:00</lastmod>
+  <loc>https://lukejyk.github.io/blog/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/projects/1_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/1_project/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/2_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/5_project/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/3_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/2_project/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/4_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/4_project/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/5_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/projects/6_project/</loc>
+  <lastmod>2021-07-13T02:47:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/6_project/</loc>
-<lastmod>2021-07-13T10:11:16+08:00</lastmod>
+  <loc>https://lukejyk.github.io/blog/tags/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/misc/</loc>
+  <loc>https://lukejyk.github.io/blog/categories/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/</loc>
+  <loc>https://lukejyk.github.io/blog/tech/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/course/</loc>
+  <loc>https://lukejyk.github.io/blog/about/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/cv/</loc>
+  <loc>https://lukejyk.github.io/blog/en/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>/projects/</loc>
+  <loc>https://lukejyk.github.io/blog/tags/%E5%BC%80%E5%A4%A9%E8%BE%9F%E5%9C%B0/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>/assets/pdf/CV.pdf</loc>
-<lastmod>2021-05-20T08:04:37+08:00</lastmod>
+  <loc>https://lukejyk.github.io/blog/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>/assets/pdf/example_pdf.pdf</loc>
-<lastmod>2021-05-20T08:27:45+08:00</lastmod>
+  <loc>https://lukejyk.github.io/blog/categories/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>/assets/ppt/proposal%20ppt.pdf</loc>
-<lastmod>2020-04-23T13:55:12+08:00</lastmod>
+  <loc>https://lukejyk.github.io/blog/tech/website/blog-begin/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
+<url>
+  <loc>https://lukejyk.github.io/blog/en/about/</loc>
+  <lastmod>2021-07-06T09:50:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
