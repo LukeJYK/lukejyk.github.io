@@ -255,4 +255,4 @@ d-appendix a, d-appendix a.footnote-backlink { color: var(--global-distill-app-c
 
 d-appendix a:hover, d-appendix a.footnote-backlink:hover { color: var(--global-hover-color) !important; }
 
-/*# sourceMappingURL=main.css.map */
+.note-icon { vertical-align: middle; height: 16px; width: 16px; margin-right: 4px; }
