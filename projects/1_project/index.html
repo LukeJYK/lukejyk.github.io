@@ -199,25 +199,92 @@
 
   <header class="post-header">
     <h1 class="post-title">Dynamic Instruction Scheduling</h1>
-    <p class="post-description">Every project has a beautiful feature showcase page.</p>
+    <p class="post-description">Simulation and Analysis of Dynamic Instruction Scheduling Algorithms.</p>
   </header>
 
   <article>
-    <iframe src="https://onedrive.live.com/embed?cid=54ED37C088310744&amp;resid=54ED37C088310744%21106&amp;authkey=AK2uJWyV3Wyl0AY&amp;em=2" width="1100" height="700" frameborder="0" scrolling="no"></iframe>
+    <hr />
 
-<p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+<p>[<a target="_self" href="../../../assets/pdf/proposal.pdf">proposal</a>][<a target="_self" href=".../assets/">code</a>][<a target="_self" href="../../../assets/ppt/proposal ppt.pdf">slides</a>]</p>
+<h2 id="description">Description</h2>
+<p>After studying from class (<code class="language-plaintext highlighter-rouge">Computer Architecture</code> by Prof. Buyue Qian) about dynamic instruction
+scheduling, I have put my interest on simulating the algorithms. It is important to analyse these algorithms and their
+performances. In this project, The substance of my work can
+be presented by the following three steps:</p>
+<ul>
+    <li>Research in detail on scoreboarding algorithm and Tomasulo algorithm, develop a solid understanding on the
+footstone approach.</li>
+    <li>Impelement these algorithms with GUI, get a better
+understanding.</li>
+    <li>Evaluate and analyse the algorithms.</li>
+</ul>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<p>In order to do so, I have carried out a plan including
+two parts. First, two algorithms should be tested on PC.
+Second, a GUI platform will be built, in which simulations for
+dynamic instruction scheduling are displayed to demonstrate
+the precise mechanism of the pipeline and eventually show
+the effectiveness of the algorithms. After the implementation,
+comparing two algorithms will be evaluated and other relevant
+problems to be encountered will be discussed.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Data hazards in a program cause a processor to stall.
+With static scheduling, the compiler tries to reorder these
+instructions during compile time to reduce pipeline stalls. As
+for another choice, dynamic scheduling the hardware tries to
+rearrange the instructions during run-time to reduce pipeline
+stalls. Dynamic scheduling is an important technic utilizing in
+many modern processors.</p>
+
+<p>Computer scientists develop novel algorithms for dynamic
+instruction scheduling to improve computer efficiency. The
+scoreboard algorithm and Tomasulo algorithm are two typical
+dynamic scheduling algorithms. The Tomasulo algorithm is
+much better than the scoreboard algorithm and is a stronger
+algorithm. Many modern processors that develop instruction-level parallelism use the Tomasulo algorithm or its variants.
+I will discuss these two algorithms in the next part.</p>
+
+<hr />
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+
+    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
+
+    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
