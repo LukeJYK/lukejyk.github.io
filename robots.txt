@@ -1,1 +1,4 @@
-Sitemap: /sitemap.xml
+User-agent: *
+Disallow:
+
+Sitemap: http://localhost:4000/al-folio/sitemap.xml
