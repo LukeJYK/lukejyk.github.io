@@ -325,4 +325,6 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover { color: var(--global-h
 
 @media (max-width: 1024px) { d-article d-contents { display: block; grid-column-start: 2; grid-column-end: -2; padding-bottom: 0.5em; margin-bottom: 1em; padding-top: 0.5em; width: 100%; border: 1px solid var(--global-divider-color); } d-article d-contents nav { grid-column: none; } }
 
+.note-icon { vertical-align: middle; height: 16px; width: 16px; margin-right: 4px; }
+
 /*# sourceMappingURL=main.css.map */
