@@ -13,8 +13,7 @@
         Yankai Jiang - 姜彦凯
     </title>
     <meta name="author" content="Yankai (Luke)  Jiang" />
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-" />
+    <meta name="description" content="CMU 15-445/645 (FALL 2021)" />
 
 
     <!-- Bootstrap & MDB -->
@@ -32,7 +31,7 @@
     <!-- Styles -->
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="/blog/category/sample-posts/">
+    <link rel="canonical" href="/notes/intro_database">
     
     <!-- Dark Mode -->
     
@@ -105,71 +104,103 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> sample-posts </h1>
-    <p class="post-description"> an archive of posts in this category </p>
-  </header>
+          <header class="post-header">
+            <h1 class="post-title">Database Systems</h1>
+            <p class="post-description">CMU 15-445/645 (FALL 2021)</p>
+          </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Sep 28, 2020</th>
-          <td>
-              <a class="post-link" href="/blog/2020/github-metadata/">a post with github metadata</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Sep 28, 2020</th>
-          <td>
-              <a class="post-link" href="/blog/2020/twitter/">a post with twitter</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Oct 20, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/comments/">a post with comments</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Oct 20, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/math/">a post with math</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Jul 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/code/">a post with code</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">May 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/images/">a post with images</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Mar 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/formatting-and-links/">a post with formatting and links</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
+          <article>
+            <aside>
+📌 CMU Fall 2021, [https://15445.courses.cs.cmu.edu/fall2021/](https://15445.courses.cs.cmu.edu/fall2021/)
 
-</div>
+</aside>
+
+<aside>
+📌 Instructor: Andrew Crotty
+
+</aside>
+
+<h1 id="lecture-1-introduction">Lecture 1: Introduction</h1>
+
+<p><strong>Focus on</strong>: Relational database, storage, execution, concurrency control, recovery, distributed databases and potpourri.</p>
+
+<ol>
+  <li>For getting data from a data form using Python, several Data Integrity problems:
+    <ul>
+      <li>Different names of one artist</li>
+      <li>Overwrite the year (integer) with an invalid string</li>
+      <li>one album contains several artists</li>
+      <li>Delete artist</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Several Implementation problems:</p>
+
+<ul>
+  <li>Particular record</li>
+  <li>Create new application uses same database.</li>
+  <li>Concurrency problem</li>
+  <li>Delete artist</li>
+</ul>
+
+<p>Several Durability problems:</p>
+
+<ul>
+  <li>Machine crash while uploading new records</li>
+  <li>Replicate the database on multiple machines for high availability.</li>
+</ul>
+
+<blockquote>
+  <p><strong>DBMS</strong>: to allow definition, creation, querying, update, and administration of databases</p>
+
+</blockquote>
+
+<ol>
+  <li>
+    <p><strong>Data Model</strong>: collection of concepts for describing the data in a database.</p>
+
+    <p>such as: Relational, K/V, Graph, Document, Column-family, Array/Matrix(Machine Learning), Hierarchical, Network, Multi-value.</p>
+
+    <p><strong>Schema</strong>: Description of a particular collection of data , using a given data model.</p>
+  </li>
+  <li>
+    <p><strong>Relational Model</strong></p>
+  </li>
+</ol>
+
+<p>Database abstraction to avoid maintenance:</p>
+
+<ul>
+  <li>Store database in simple data structures.</li>
+  <li>Access data through high-level language, DBMS figures out best strategy.</li>
+  <li>Physical storage left up to the DBMS implementation.</li>
+</ul>
+
+<p><strong>Structure</strong>: Definition of the database’s relations and their contents.</p>
+
+<p><strong>Integrity</strong>: Ensure database’s contents satisfy constraints.</p>
+
+<p><strong>Manipulation</strong>: Programming interface for accessing and modifying a database’s contents.</p>
+
+<p>e.g.  Artist(name, year, country) <strong>NULL</strong> is a member of every domain.</p>
+
+<p><strong><em>n-ary Relation = Table with n columns</em></strong></p>
+
+<p>Primary key identifies a single tuple. (Some DBMSs create an internal primary key if a table does not define one. e.g. SEQUENCE AUTO_INCREMENT)</p>
+
+<p>Foreign Key specifies that an attribute from on relation has to map to a tuple in another relation.</p>
+
+<ol>
+  <li>Data Manipulation Languages()</li>
+</ol>
+
+          </article>
+
+        </div>
 
     </div>
 

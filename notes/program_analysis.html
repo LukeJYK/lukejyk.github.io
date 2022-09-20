@@ -70,6 +70,9 @@
                 <a class="nav-link" href="/">Home</a>
               </li>
               
+              
+	            
+
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -78,7 +81,13 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/misc/">Misc</a>
               </li>
-
+              
+              
+               <!-- CV -->
+              <li class="nav-item">
+                <a class="nav-link" href="/assets/pdf/cv.pdf" target="_self">CV</a>
+              </li> 
+              
               <!-- Toogle theme mode -->
               <li class="toggle-container">
                 <button id="light-toggle" title="Change theme">
@@ -86,6 +95,8 @@
                   <i class="fas fa-sun"></i>
                 </button>
               </li>
+   
+
             </ul>
           </div>
         </div>
@@ -103,16 +114,15 @@
           </header>
 
           <article>
-            <h1 id="program-analysis">Program Analysis</h1>
-
-<aside>
+            <aside>
 📌 Nanjing University Program Analysis
+
 📌 Teachers: Yue Li, Tian Tan
 
 
 </aside>
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="1-introduction">1. Introduction</h1>
 
 <p>Static analysis: analyze P before running P.</p>
 
@@ -133,11 +143,9 @@
 
 <blockquote>
   <p><strong>Rice Theorem</strong>: any non-trivial property of the behavior of programs in re language is undecidable 递归可枚举语言（图灵机可识别的语言）是undecidable. non-trivial properties=interesting properties=related to run-time behavior</p>
-
 </blockquote>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                               **Perfect static analysis (sound and complete) not exist!** 
-</code></pre></div></div>
+<p><strong>Perfect static analysis (sound and complete) not exist!</strong></p>
 
 <p>Most compromising completeness: <strong>sound</strong> but not <strong>fully-precise</strong>.</p>
 
@@ -161,24 +169,22 @@
 
 <p><strong>How to get abstract values?</strong> Transfer function</p>
 
-<ol>
-  <li>Course Introduction		                 [note][slides]</li>
-  <li>Intermediate Representation               [note][slides]</li>
-  <li>Data Flow Analysis - Applications I	     [note][slides]</li>
-  <li>Data Flow Analysis - Applications II	     [note][slides]</li>
-  <li>Data Flow Analysis - Foundations I	     [note][slides]</li>
-  <li>Data Flow Analysis - Foundations II	     [note][slides]</li>
-  <li>Interprocedural Analysis	                 [note][slides]</li>
-  <li>Pointer Analysis                          [note][slides]</li>
-  <li>Pointer Analysis - Foundations I	         [note][slides]</li>
-  <li>Pointer Analysis - Foundations II	     [note][slides]</li>
-  <li>Pointer Analysis - Context Sensitivity I [note][slides]</li>
-  <li>Pointer Analysis - Context Sensitivity II[note][slides]</li>
-  <li>Static Analysis for Security             [note][slides]</li>
-  <li>Datalog-Based Program Analysis		     [note][slides]</li>
-  <li>CFL-Reachability and IFDS		         [note][slides]</li>
-  <li>Soundness and Soundiness                 [note][slides]</li>
-</ol>
+<!-- 1. Course Introduction		                 [note][slides]
+2. Intermediate Representation               [note][slides]
+3. Data Flow Analysis - Applications I	     [note][slides]	
+4. Data Flow Analysis - Applications II	     [note][slides]
+5. Data Flow Analysis - Foundations I	     [note][slides]		
+6. Data Flow Analysis - Foundations II	     [note][slides]
+7. Interprocedural Analysis	                 [note][slides]
+8. Pointer Analysis                          [note][slides]	  	
+9. Pointer Analysis - Foundations I	         [note][slides]	
+10. Pointer Analysis - Foundations II	     [note][slides]
+11. Pointer Analysis - Context Sensitivity I [note][slides]		
+12. Pointer Analysis - Context Sensitivity II[note][slides]	
+13. Static Analysis for Security             [note][slides]	
+14. Datalog-Based Program Analysis		     [note][slides]	
+15. CFL-Reachability and IFDS		         [note][slides]
+16. Soundness and Soundiness                 [note][slides] -->
 
           </article>
 
