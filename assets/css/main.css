@@ -6,12 +6,12 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
-  --global-code-bg-color: rgba(181, 9, 172, 0.05);
+  --global-bg-color: #f7f4ee;
+  --global-code-bg-color: rgba(31, 111, 120, 0.08);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #B509AC;
-  --global-hover-color: #B509AC;
+  --global-theme-color: #1f6f78;
+  --global-hover-color: #2f8a94;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
@@ -72,11 +72,11 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 750px;
+  max-width: 880px;
 }
 
 .profile img {
-  width: 65%;
+  width: 80%;
 }
 
 /******************************************************************************
@@ -90,8 +90,11 @@ body.sticky-bottom-footer {
  ******************************************************************************/
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
-  font-family: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+  font-family: 400 15px/1.6 "Avenir Next", "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+strong, b {
+  font-weight: 600;
 }
 
 hr {
@@ -163,7 +166,7 @@ blockquote {
 }
 
 .profile {
-  margin-right: 0;
+  margin-right: 16px;
   width: 30%;
 }
 .profile .address {
@@ -178,7 +181,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 32%;
+    width: 22%;
   }
   .profile .address p {
     display: block;
@@ -770,8 +773,29 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 html {
   scroll-behavior: smooth;
 }
+.post-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.post-content h5[id] {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--global-theme-color);
+  display: inline-block;
+  font-weight: 600;
+}
+.post-content > p {
+  line-height: 1.7;
+}
 .pub-row {
-  margin-bottom: 14px;
+  margin-bottom: 4px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+.pub-row:hover {
+  background-color: var(--global-code-bg-color);
 }
 .pub-num {
   min-width: 34px;
