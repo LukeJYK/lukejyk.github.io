@@ -777,20 +777,34 @@ html {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+.page-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 .post-content h5[id] {
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 6px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 4px;
   border-bottom: 2px solid var(--global-theme-color);
   display: inline-block;
   font-weight: 600;
+}
+.post-content h5[id]:first-of-type {
+  margin-top: 0.4rem;
+}
+.visitor-map {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 .post-content > p {
   line-height: 1.7;
 }
 .pub-row {
-  margin-bottom: 4px;
-  padding: 8px 10px;
+  margin-bottom: 2px;
+  padding: 6px 10px;
   border-radius: 6px;
   transition: background-color 0.15s ease;
 }
@@ -819,20 +833,196 @@ html {
 .pub-meta i {
   color: var(--global-text-color-light);
 }
-.edu-table {
+.pub-thumb {
+  flex: 0 0 220px;
+  width: 220px;
+  margin-left: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.pub-thumb img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.pub-thumb.pub-thumb-empty {
+  border: 1px dashed var(--global-divider-color);
+  background: var(--global-code-bg-color);
 }
 @media (max-width: 576px) {
-  .edu-table, .edu-table tbody, .edu-table tr, .edu-table td {
-    display: block;
-    width: 100% !important;
-    text-align: left !important;
+  .pub-row .col-md-12 {
+    flex-wrap: wrap;
   }
-  .edu-table tr {
-    margin-bottom: 16px;
+  .pub-thumb {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;
+    flex-basis: 100%;
   }
-  .edu-table img {
-    margin: 8px 0 0 0 !important;
+}
+.edu-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 2px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+.edu-row:hover {
+  background-color: var(--global-code-bg-color);
+}
+.edu-logo {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.edu-logo img {
+  max-width: 76%;
+  max-height: 76%;
+  object-fit: contain;
+}
+.edu-body {
+  flex: 1;
+}
+.edu-title {
+  margin-bottom: 2px;
+}
+.edu-meta {
+  color: var(--global-text-color-light);
+}
+.edu-date {
+  flex: 0 0 auto;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.entry-row {
+  margin-bottom: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+.entry-row:hover {
+  background-color: var(--global-code-bg-color);
+}
+.entry-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.entry-meta {
+  color: var(--global-text-color-light);
+  line-height: 1.5;
+}
+
+.simple-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.simple-list li {
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+.simple-list li:hover {
+  background-color: var(--global-code-bg-color);
+}
+.simple-list li::before {
+  content: "\2014";
+  color: var(--global-theme-color);
+  margin-right: 8px;
+}
+
+.autograph-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+.autograph-card {
+  display: flex;
+  flex-direction: column;
+}
+.autograph-photo {
+  position: relative;
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.autograph-photo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+.autograph-photo.autograph-photo-empty {
+  width: 165px;
+  border: 1px dashed var(--global-divider-color);
+  background: var(--global-code-bg-color);
+}
+@media (max-width: 480px) {
+  .autograph-photo {
+    height: 160px;
+  }
+  .autograph-photo.autograph-photo-empty {
+    width: 120px;
+  }
+}
+.autograph-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.autograph-photo:hover .autograph-overlay {
+  opacity: 1;
+}
+.autograph-name,
+.autograph-meta,
+.autograph-perf {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.autograph-perf {
+  font-style: italic;
+  margin: 2px 0;
+}
+
+@media (max-width: 480px) {
+  .edu-row {
+    flex-wrap: wrap;
+  }
+  .edu-date {
+    flex: 1 0 100%;
+    text-align: left;
+    margin-top: 4px;
+    padding-left: 66px;
   }
 }
 
