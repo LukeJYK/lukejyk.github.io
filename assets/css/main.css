@@ -960,7 +960,9 @@ html {
 }
 .autograph-photo {
   position: relative;
+  flex-shrink: 0;
   height: 220px;
+  max-width: 100%;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
