@@ -972,6 +972,11 @@ html {
   margin-right: 8px;
 }
 
+.service-group {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
 .autograph-grid {
   display: flex;
   flex-wrap: wrap;
