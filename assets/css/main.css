@@ -972,6 +972,33 @@ html {
   margin-right: 8px;
 }
 
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.news-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 2px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+.news-list li:hover {
+  background-color: var(--global-code-bg-color);
+}
+.news-date {
+  flex: 0 0 72px;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+.post-content .news-list + h5[id] {
+  margin-top: 0.75rem;
+}
+
 .service-group {
   color: var(--global-text-color);
   font-weight: 500;
