@@ -1092,3 +1092,27 @@ html {
 }
 
 /*# sourceMappingURL=main.css.map */
+/* In memoriam tribute (misc page) */
+.tribute {
+  margin: 0 0 2rem;
+  font-size: 0.8rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--global-text-color-light);
+  background: rgba(130, 130, 130, 0.06);
+  border-radius: 4px;
+}
+.tribute-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.9rem;
+}
+.tribute-dates {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+}
+.tribute p:last-child {
+  margin-bottom: 0;
+}
+.tribute-closing {
+  font-style: italic;
+}
